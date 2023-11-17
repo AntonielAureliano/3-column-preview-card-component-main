@@ -9,14 +9,59 @@
   --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
   --neutral-very-light-gray: hsl(0, 0%, 95%);
 
-  --font-family-default: "Big Shoulders Display", sans-serif;
-  --font-family-secundary: "Lexend Deca", sans-serif;
+  --font-family-default: "Lexend Deca", sans-serif;
+  --font-family-secundary: "Big Shoulders Display", sans-serif;
 }
 
+/*Estilos gerais*/
 body {
+  background-color: var(--neutral-very-light-gray);
+  font-family: var(--font-family-default);
   font-size: 0.9375rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*container*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 200px auto;
+}
+
+/*card-default*/
+.card-default {
+  max-width: 25ch;
+  padding: 40px;
+}
+
+.card-default h2 {
+  font-family: var(--font-family-secundary);
+  text-transform: uppercase;
+}
+
+/*cards*/
+.card-1 {
+  background-color: var(--primary-bright-orange);
+  border-radius: 5px 0 0 5px;
+}
+
+.card-2 {
+  background-color: var(--primary-dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--primary-very-dark-cyan);
+  border-radius: 0 5px 5px 0;
+}
 /*Footer*/
 .attribution {
   font-size: 0.6875rem;
