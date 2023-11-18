@@ -39,13 +39,31 @@ a {
 
 /*card-default*/
 .card-default {
-  max-width: 25ch;
   padding: 40px;
 }
 
 .card-default h2 {
+  color: var(--neutral-very-light-gray);
   font-family: var(--font-family-secundary);
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.card-default p {
+  color: var(--neutral-transparent-white);
+  line-height: 1.6;
+  margin-bottom: 100px;
+  max-width: 23ch;
+}
+
+.card-default a {
+  border: solid 2px var(--neutral-very-light-gray);
+  color: var(--neutral-very-light-gray);
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: 0.1s;
 }
 
 /*cards*/
@@ -54,13 +72,28 @@ a {
   border-radius: 5px 0 0 5px;
 }
 
+.card-1 a:hover {
+  background-color: var(--neutral-very-light-gray);
+  color: var(--primary-bright-orange);
+}
+
 .card-2 {
   background-color: var(--primary-dark-cyan);
+}
+
+.card-2 a:hover {
+  background-color: var(--neutral-very-light-gray);
+  color: var(--primary-dark-cyan);
 }
 
 .card-3 {
   background-color: var(--primary-very-dark-cyan);
   border-radius: 0 5px 5px 0;
+}
+
+.card-3 a:hover {
+  background-color: var(--neutral-very-light-gray);
+  color: var(--primary-very-dark-cyan);
 }
 /*Footer*/
 .attribution {
